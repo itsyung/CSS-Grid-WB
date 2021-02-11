@@ -70,8 +70,22 @@
     .container {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: repeat(10, 1fr);
+      grid-template-columns: repeat(10, 100px);
+      grid-template-rows: repeat(5, 100px);
+      justify-items: stretch;
+      align-items: stretch;
+      /* place-items: center center; */
+      justify-content: space-between;
+      align-content: space-between;
+
     }
+
+    .itm {
+      background: green;
+      justify-self: center;
+      align-self: center;
+    }
+
   </style>
 </body>
 
